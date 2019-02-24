@@ -27,8 +27,8 @@ public class Order {
     private Shipping shipping;
     @Field("Products")
     private Set<OrderedProduct> orderedProducts = new HashSet<>();
-    @Field("Customer")
-    private OrderCustomer orderCustomer;
-    @Field("Employee")
-    private OrderEmployee orderEmployee;
+    //@Field("Customer")
+    //private OrderCustomer orderCustomer;
+    //@Field("Employee")
+    //private OrderEmployee orderEmployee;
 }
