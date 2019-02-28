@@ -10,7 +10,6 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Shipping {
-
     private String shippedDate;
     private Integer shipVia;
     private double freight;
