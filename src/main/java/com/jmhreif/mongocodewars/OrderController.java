@@ -9,16 +9,16 @@ import org.springframework.web.bind.annotation.RestController;
 @AllArgsConstructor
 @RequestMapping("/orders")
 public class OrderController {
-    private final OrderService orderService;
+    private final OrderRepo orderRepo;
 
     @GetMapping("/")
-    public Iterable<Order> findAllOrders() { return orderService.findAllOrders(); }
+    public Iterable<Order> findAllOrders() { return orderRepo.findAll(); }
 
     @GetMapping("/findorderbyid")
     public Order findByOrderId(Long orderId) {
-        return orderService.findOrderByOrderId(orderId);
+        return orderRepo.findOrderByOrderId(orderId);
     }
 
     @GetMapping("/findordersbyproduct")
-    public Iterable<Order> findOrdersByOrderedProductsContaining(String productName) { return orderService.findOrdersByOrderedProductsContaining(productName); }
+    public Iterable<Order> findOrdersByOrderedProductsContaining(String productName) { return orderRepo.findOrdersByOrderedProductsContaining(productName); }
 }
