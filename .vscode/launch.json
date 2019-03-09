@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-MongoCodeWarsApplication<mongo-code-wars>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.jmhreif.mongocodewars.MongoCodeWarsApplication",
+            "projectName": "mongo-code-wars",
+            "args": ""
+        }
+    ]
+}
